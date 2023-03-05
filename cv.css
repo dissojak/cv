@@ -1,0 +1,431 @@
+/* Header styles */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 50px 0;
+  position: relative;
+}
+
+header h1 {
+  font-size: 36px;
+  margin-top: 0;
+  color: #333;
+}
+
+.contact-info {
+  text-decoration:  none;
+  color :#2bf58c;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Main styles */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+
+ul {
+  margin-left: 20px;
+}
+
+/* Work experience styles */
+.employer {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.employment-dates {
+  font-size: 16px;
+  margin-top: 0;
+  color: #666;
+}
+
+ul ul {
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+/* Education styles */
+.institution {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.graduation-date {
+  font-size: 16px;
+  margin-top: 0;
+  color: #666;
+}
+
+/* Skills styles */
+#skills {
+
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+#skills li {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+
+/*------------------------------------------------*/
+  /* Contact styles */
+  #contact {
+    text-align: center;
+  }
+  
+  #contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #contact li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  #contact .fa {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+  
+  /* Icon styles */
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .fa-envelope:before {
+    content: "\f0e0";
+  }
+  
+  .fa-phone:before {
+    content: "\f095";
+  }
+  
+  .fa-github:before {
+    content: "\f09b";
+  }
+  
+  .fa-linkedin:before {
+    content: "\f0e1";
+  }
+  
+  /* Icon colors */
+  .fa-envelope {
+    color: #EA4335;
+  }
+  
+  .fa-phone {
+    color: #2bf58c;
+  }
+  
+  .fa-github {
+    color: #211F1F;
+  }
+  
+  .fa-linkedin {
+    color: #2bf58c;
+  }
+  
+  @media screen and (max-width: 600px) {
+    header h1 {
+      font-size: 28px;
+    }
+  
+    section h2 {
+      font-size: 20px;
+    }
+  
+    section h3 {
+      font-size: 18px;
+    }
+  
+    ul {
+      margin-left: 0;
+    }
+  
+    #skills li {
+      font-size: 14px;
+      padding: 6px 10px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+  }
+
+  /*------------------------------------------------*/
+
+
+#header h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+#experience h2:before {
+  content: "\f0da";
+  font-family: FontAwesome;
+  margin-right: 10px;
+  color: #2bf58c;
+}
+
+#education h2:before {
+  content: "\f19d";
+  font-family: FontAwesome;
+  margin-right: 10px;
+  color: #2bf58c;
+}
+
+#skills h2:before {
+  content: "\f0c3";
+  font-family: FontAwesome;
+  margin-right: 10px;
+  color: #2bf58c;
+}
+/*---------------------------------------------------------------------------------*/
+/* Media queries */
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 28px;
+  }
+
+  section h2 {
+    font-size: 20px;
+  }
+
+  ul {
+    margin-left: 0;
+  }
+
+  #skills li {
+    font-size: 14px;
+    padding: 6px 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.profile-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid rgb(43, 245, 140);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  padding: 5px; /* adjust this value to create the desired gap */
+}
+
+.profile-circle img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* keep the photo inside the circle */
+}
+
+
+  
+#contact form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex-basis: 100%;
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  line-height: 1.6;
+  resize: none;
+}
+
+.button {
+  background-color: #2bf58c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dow_button {
+  background-color: #2bf58c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 105px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+}
+
+
+.button:hover {
+  background-color: #1b9053;
+}
+.dow_button:hover {
+  background-color: #1b9053;
+}
+
+nav {
+  position: sticky;
+  top: 0 ;
+  width: 55%;
+  margin: auto;
+  margin-bottom: 100px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul {
+ 
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+nav li {
+  
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+#dark-mode-toggle {
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 10px;
+ margin: 0 auto 10px;
+}
+
+#dark-mode-toggle:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
+.myiconS {
+  width: 60px;
+  height: 50px;
+  background-image: url('greenedition_stoonprod.png');
+  background-size: contain;
+  display: inline-block;
+  vertical-align: -22px;
+  background-repeat: no-repeat;
+}
+
+.summary{
+  padding: 0px 80px;
+  margin-right: 10px;
+}
+
+
+nav.fixed {
+  position: fixed;
+  top: 0;
+}
+
+.nav2{
+display: flex;
+gap: 1rem;
+background: #000;
+color: white;
+width: 660px;
+margin: auto;
+padding: .5rem 0;
+justify-content: space-between;
+
+}
+.nav2in{
+
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
